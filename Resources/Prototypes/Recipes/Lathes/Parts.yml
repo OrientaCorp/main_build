@@ -1,0 +1,90 @@
+#Rating 1
+- type: latheRecipe
+  id: CapacitorStockPart
+  result: CapacitorStockPart
+  completetime: 1
+  materials:
+    Steel: 50
+    Plastic: 50
+
+- type: latheRecipe
+  id: MatterBinStockPart
+  result: MatterBinStockPart
+  completetime: 1
+  materials:
+    Steel: 50
+    Plastic: 50
+
+- type: latheRecipe
+  id: MicroLaserStockPart
+  result: MicroLaserStockPart
+  completetime: 1
+  materials:
+    Steel: 50
+    Glass: 50
+    Plastic: 50
+
+- type: latheRecipe
+  id: MicroManipulatorStockPart
+  result: MicroManipulatorStockPart
+  completetime: 1
+  materials:
+    Steel: 50
+    Plastic: 50
+
+- type: latheRecipe
+  id: ScanningModuleStockPart
+  result: ScanningModuleStockPart
+  completetime: 1
+  materials:
+    Steel: 50
+    Glass: 50
+    Plastic: 50
+
+#Rating 2
+- type: latheRecipe
+  id: AdvancedCapacitorStockPart
+  result: AdvancedCapacitorStockPart
+  completetime: 3
+  materials:
+    Steel: 150
+    Plastic: 100
+    Gold: 50
+
+- type: latheRecipe
+  id: AdvancedMatterBinStockPart
+  result: AdvancedMatterBinStockPart
+  completetime: 3
+  materials:
+    Steel: 150
+    Plastic: 150
+    Plasma: 50
+
+- type: latheRecipe
+  id: HighPowerMicroLaserStockPart
+  result: HighPowerMicroLaserStockPart
+  completetime: 3
+  materials:
+    Steel: 100
+    Glass: 150
+    Plastic: 150
+    Gold: 50
+
+- type: latheRecipe
+  id: NanoManipulatorStockPart
+  result: NanoManipulatorStockPart
+  completetime: 3
+  materials:
+    Steel: 150
+    Plastic: 200
+    Plasma: 50
+
+- type: latheRecipe
+  id: AdvancedScanningModuleStockPart
+  result: AdvancedScanningModuleStockPart
+  completetime: 3
+  materials:
+    Steel: 100
+    Glass: 150
+    Plastic: 150
+    Plasma: 50

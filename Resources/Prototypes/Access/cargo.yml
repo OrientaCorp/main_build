@@ -1,0 +1,13 @@
+- type: accessLevel
+  id: Cargo
+  name: Cargo
+
+- type: accessLevel
+  id: Mail
+  name: Mail
+
+- type: accessGroup
+  id: Cargo
+  tags:
+  - Cargo
+  - Mail

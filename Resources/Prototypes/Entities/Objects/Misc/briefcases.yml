@@ -1,0 +1,31 @@
+- type: entity
+  parent: BaseStorageItem
+  abstract: true
+  id: BriefcaseBase
+  description: Useful for carrying items in your hands.
+  components:
+  - type: Item
+    size: 60
+  - type: Storage
+    capacity: 60
+  - type: MeleeWeapon
+    bluntStaminaDamageFactor: 3.0
+    attackRate: 0.9
+    range: 1.75
+    damage:
+      types:
+        Blunt: 3.5
+  - type: StaminaDamageOnHit
+    damage: 4.5
+
+- type: entity
+  name: brown briefcase
+  parent: BriefcaseBase
+  id: BriefcaseBrown
+  description: A handy briefcase.
+  components:
+  - type: Sprite
+    sprite: Objects/Storage/Briefcases/briefcase_brown.rsi
+    state: icon
+  - type: Item
+    sprite: Objects/Storage/Briefcases/briefcase_brown.rsi

@@ -1,0 +1,40 @@
+- type: entity
+  abstract: true
+  parent: Clothing
+  id: ClothingBeltBase
+  components:
+  - type: Sprite
+    state: icon
+  - type: Item
+    size: 50
+  - type: Clothing
+    slots: [belt]
+    quickEquip: false
+    clothingVisuals:
+      belt2: #there should be a cleaner way to do this tbh
+      - state: equipped-BELT
+
+- type: entity
+  abstract: true
+  parent: ClothingBeltBase
+  id: ClothingBeltStorageBase
+  components:
+  - type: Storage
+    capacity: 40
+    equipSound:
+      path: /Audio/Items/belt_equip.ogg
+  - type: MeleeWeapon
+    attackRate: 1.1
+    range: 1.65
+    damage:
+      types:
+        Blunt: 1
+        Slash: 1
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+  - type: UserInterface
+    interfaces:
+    - key: enum.StorageUiKey.Key
+      type: StorageBoundUserInterface

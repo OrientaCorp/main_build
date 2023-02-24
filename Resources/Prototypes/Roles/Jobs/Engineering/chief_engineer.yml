@@ -1,0 +1,52 @@
+- type: job
+  id: ChiefEngineer
+  name: job-name-ce
+  description: job-description-ce
+  playTimeTracker: JobChiefEngineer
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobAtmosphericTechnician
+      time: 3600
+    - !type:RoleTimeRequirement
+      role: JobSalvageTechnician
+      time: 3600
+    - !type:DepartmentTimeRequirement
+      department: Engineering
+      time: 18000
+    - !type:OverallPlaytimeRequirement
+      time: 72000
+  weight: 10
+  startingGear: ChiefEngineerGear
+  icon: "ChiefEngineer"
+  requireAdminNotify: true
+  supervisors: job-supervisors-captain
+  canBeAntag: false
+  whitelistRequired: true
+  access:
+  - Maintenance
+  - Engineering
+  - Command
+  - Salvage
+  - External
+  - ChiefEngineer
+  - Atmospherics
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: PsionicBonusChance
+      flatBonus: 0.025
+
+- type: startingGear
+  id: ChiefEngineerGear
+  equipment:
+    head: ClothingHeadHatHardhatWhite
+    jumpsuit: ClothingUniformJumpsuitChiefEngineer
+    back: ClothingBackpackEngineeringFilled
+    shoes: ClothingShoesColorBrown
+    id: CEPDA
+    eyes: ClothingEyesGlassesMeson
+    ears: ClothingHeadsetAltEngineering
+    belt: ClothingBeltChiefEngineerFilled
+  innerclothingskirt: ClothingUniformJumpskirtChiefEngineer
+  satchel: ClothingBackpackSatchelEngineeringFilled
+  duffelbag: ClothingBackpackDuffelEngineeringFilled

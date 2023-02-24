@@ -1,0 +1,27 @@
+- type: entity
+  id: ForensicPad
+  name: forensic pad
+  parent: BaseItem
+  description: A forensic pad for collecting fingerprints or fibers.
+  components:
+  - type: Item
+    size: 3
+  - type: ForensicPad
+  - type: Sprite
+    sprite: Nyanotrasen/Objects/Misc/forensic_pad.rsi
+    netsync: false
+    layers:
+    - state: icon
+    - map: ["enum.ForensicPadVisualLayers.Prints"]
+      state: used
+      visible: false
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ForensicPadVisuals.IsUsed:
+        enum.ForensicPadVisualLayers.Prints:
+          True: { visible: true }
+          False: { visible: false }
+  - type: Tag
+    tags:
+    - Document

@@ -1,0 +1,80 @@
+- type: entity
+  name: pickaxe
+  parent: BaseItem
+  id: Pickaxe
+  description: Notched to perfection, for jamming it into rocks
+  components:
+  - type: Tag
+    tags:
+    - Pickaxe
+  - type: Sprite
+    sprite: Objects/Weapons/Melee/pickaxe.rsi
+    state: pickaxe
+  - type: GatheringTool
+    damage:
+      types:
+        Structural: 50
+  - type: ItemCooldown
+  - type: MeleeWeapon
+    range: 1.75
+    attackRate: 0.75
+    bluntStaminaDamageFactor: 4.0
+    damage:
+      types:
+        Piercing: 6
+        Blunt: 5
+  - type: StaminaDamageOnHit
+    damage: 5
+  - type: MeleeStaminaCost
+    swing: 10
+  - type: MeleeBloodletter
+    bloodReduction:
+      types:
+        Slash: 7.0
+  - type: Item
+    size: 15
+    sprite: Objects/Weapons/Melee/pickaxe.rsi
+
+- type: entity
+  name: mining drill
+  parent: BaseItem
+  id: MiningDrill
+  description: Powerful tool used to quickly drill through rocks
+  components:
+  - type: Tag
+    tags:
+      - Pickaxe
+  - type: Item
+    size: 24
+  - type: Sprite
+    sprite: Objects/Tools/handdrill.rsi
+    state: handdrill
+  - type: GatheringTool
+    damage:
+      types:
+        Structural: 75
+    gatheringTime: 0.50
+    MaxGatheringEntities: 2
+  - type: ItemCooldown
+  - type: MeleeWeapon
+    attackRate: 0.5
+    range: 1.4
+    bluntStaminaDamageFactor: 4.0
+    damage:
+      types:
+        Piercing: 7.5
+        Blunt: 7.5
+    soundHit:
+      path: /Audio/Items/drill_hit.ogg
+  - type: MeleeBloodletter
+    bloodReduction:
+      types:
+        Slash: 70.0
+  - type: MeleeStaminaCost
+    swing: 15
+  - type: StaminaDamageOnHit
+    damage: 2.5
+  - type: ReverseEngineering
+    difficulty: 2
+    recipes:
+      - MiningDrill

@@ -1,0 +1,38 @@
+- type: htnCompound
+  id: MedibotCompound
+  branches:
+    - tasks:
+        - id: InjectNearbyCompound
+    - tasks:
+        - id: IdleCompound
+
+- type: htnCompound
+  id: InjectNearbyCompound
+  branches:
+    - tasks:
+        - id: PickNearbyInjectablePrimitive
+        - id: MoveToAccessiblePrimitive
+        # - id: MedibotSpeakPrimitive // TODO: some sort of CD?
+        - id: MedibotInjectPrimitive
+        # - id: MedibotSpeakFinishPrimitive
+
+- type: htnPrimitive
+  id: MedibotSpeakPrimitive
+  operator: !type:SpeakOperator
+    speech: medibot-start-inject
+
+- type: htnPrimitive
+  id: MedibotSpeakFinishPrimitive
+  operator: !type:SpeakOperator
+    speech: medibot-finish-inject
+
+- type: htnPrimitive
+  id: PickNearbyInjectablePrimitive
+  operator: !type:PickNearbyInjectableOperator
+    targetKey: InjectTarget
+    targetMoveKey: MovementTarget
+
+- type: htnPrimitive
+  id: MedibotInjectPrimitive
+  operator: !type:MedibotInjectOperator
+    injectKey: InjectTarget

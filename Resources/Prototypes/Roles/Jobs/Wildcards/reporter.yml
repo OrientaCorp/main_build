@@ -1,0 +1,25 @@
+- type: job
+  id: Reporter
+  name: job-name-reporter
+  description: job-description-reporter
+  playTimeTracker: JobReporter
+  setPreference: false
+  startingGear: ReporterGear
+  icon: "Reporter"
+  supervisors: job-supervisors-hop
+  access:
+  - Service
+  extendedAccess:
+  - Maintenance
+
+- type: startingGear
+  id: ReporterGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitReporter
+    back: ClothingBackpackFilled
+    shoes: ClothingShoesColorWhite
+    id: ReporterPDA
+    ears: ClothingHeadsetService
+  innerclothingskirt: ClothingUniformJumpsuitJournalist
+  satchel: ClothingBackpackSatchelFilled
+  duffelbag: ClothingBackpackDuffelFilled

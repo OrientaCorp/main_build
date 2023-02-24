@@ -1,0 +1,32 @@
+- type: entity
+  name: baseball bat
+  parent: BaseItem
+  id: BaseBallBat
+  description: A robust baseball bat.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Melee/baseball_bat.rsi
+    state: icon
+  - type: MeleeWeapon
+    bluntStaminaDamageFactor: 2.0
+    range: 1.6
+    damage:
+      types:
+        Blunt: 7.5
+  - type: MeleeStaminaCost
+    swing: 8
+  - type: StaminaDamageOnHit
+    damage: 8
+  - type: Wieldable
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Blunt: 4
+  - type: Item
+    size: 15
+  - type: Clothing
+    slots:
+    - back
+  - type: Construction
+    graph: WoodenBat
+    node: bat

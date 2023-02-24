@@ -1,0 +1,103 @@
+- type: faction
+  id: Dragon
+  hostile:
+    - NanoTrasen
+    - Syndicate
+    - RatPassive
+    - RatHostile
+    - SimpleHostile
+    - Xeno
+    - Pet
+
+- type: faction
+  id: NanoTrasen
+  hostile:
+  - SimpleHostile
+  - Syndicate
+  - RatHostile
+  - Xeno
+
+- type: faction
+  id: SimpleHostile
+  hostile:
+  - NanoTrasen
+  - Syndicate
+  - RatPassive
+  - RatHostile
+  - Cat
+  - Xeno
+  - Dragon
+  - Pet
+
+- type: faction
+  id: SimpleNeutral
+
+- type: faction
+  id: Syndicate
+  hostile:
+  - NanoTrasen
+  - SimpleHostile
+  - Xeno
+
+- type: faction
+  id: Xeno
+  hostile:
+  - NanoTrasen
+  - Syndicate
+  - SimpleHostile
+  - RatPassive
+  - RatHostile
+
+- type: faction
+  id: RatPassive
+  hostile:
+  - Cat
+  - SimpleHostile
+  - Xeno
+  - Dragon
+
+- type: faction
+  id: RatHostile
+  hostile:
+  - Cat
+  - SimpleHostile
+  - Xeno
+  - Dragon
+  - NanoTrasen
+  - Syndicate
+  - Pet
+
+- type: faction
+  id: Pet
+  hostile:
+  - SimpleHostile
+  - Xeno
+  - Dragon
+  - RatHostile
+
+- type: faction
+  id: Cat
+  hostile:
+  - RatPassive
+  - RatHostile
+  - SimpleHostile
+
+- type: faction
+  id: Pibble #Enhances the 'pet' faction
+  hostile:
+  - Cat
+  - RatPassive
+  - Mailman
+
+- type: faction
+  id: Mailman
+
+- type: faction
+  id: GlimmerMonster # Crew hostile psionic
+  hostile:
+  - PsionicInterloper
+
+- type: faction
+  id: PsionicInterloper # Crew aligned psionic
+  hostile:
+  - GlimmerMonster

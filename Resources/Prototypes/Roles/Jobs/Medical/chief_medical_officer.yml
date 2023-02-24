@@ -1,0 +1,46 @@
+# Best job.
+
+- type: job
+  id: ChiefMedicalOfficer
+  name: job-name-cmo
+  description: job-description-cmo
+  playTimeTracker: JobChiefMedicalOfficer
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Medical
+      time: 18000
+    - !type:OverallPlaytimeRequirement
+      time: 72000
+  weight: 10
+  startingGear: CMOGear
+  icon: "ChiefMedicalOfficer"
+  antagAdvantage: 6
+  requireAdminNotify: true
+  whitelistRequired: true
+  supervisors: job-supervisors-captain
+  access:
+  - Medical
+  - Command
+  - Maintenance
+  - Chemistry
+  - ChiefMedicalOfficer
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: PsionicBonusChance
+      flatBonus: 0.025
+    - type: MedicalTraining
+
+- type: startingGear
+  id: CMOGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCMO
+    back: ClothingBackpackMedicalFilled
+    shoes: ClothingShoesColorBrown
+    outerClothing: ClothingOuterCoatLabCmo
+    id: CMOPDA
+    ears: ClothingHeadsetAltMedical
+    belt: ClothingBeltMedicalFilled
+  innerclothingskirt: ClothingUniformJumpskirtCMO
+  satchel: ClothingBackpackSatchelMedicalFilled
+  duffelbag: ClothingBackpackDuffelMedicalFilled

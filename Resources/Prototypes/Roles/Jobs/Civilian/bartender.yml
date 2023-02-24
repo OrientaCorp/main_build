@@ -1,0 +1,29 @@
+- type: job
+  id: Bartender
+  name: job-name-bartender
+  description: job-description-bartender
+  playTimeTracker: JobBartender
+  startingGear: BartenderGear
+  icon: "Bartender"
+  supervisors: job-supervisors-hop
+  access:
+  - Service
+  - Bar
+  extendedAccess:
+  - Kitchen
+  - Hydroponics
+  - Maintenance
+
+- type: startingGear
+  id: BartenderGear
+  equipment:
+    head: ClothingHeadHatTophat
+    jumpsuit: ClothingUniformJumpsuitBartender
+    outerClothing: ClothingOuterVestKevlar
+    back: ClothingBackpackFilled
+    shoes: ClothingShoesColorBlack
+    id: BartenderPDA
+    ears: ClothingHeadsetService
+  innerclothingskirt: ClothingUniformJumpskirtBartender
+  satchel: ClothingBackpackSatchelFilled
+  duffelbag: ClothingBackpackDuffelFilled

@@ -1,0 +1,91 @@
+- type: department
+  id: Civilian
+  description: department-Civilian-description
+  color: "#9FED58"
+  roles:
+  - Bartender
+  - Botanist
+  - Boxer
+  - Chef
+  - Clown
+  - Gladiator
+  - HeadOfPersonnel
+  - Janitor
+  - Lawyer
+  - MailCarrier
+  - Mime
+  - Musician
+  - Passenger
+  - Reporter
+  - Zookeeper
+  - Quartermaster
+  - Prisoner
+
+- type: department
+  id: Command
+  description: department-Command-description
+  color: "#334E6D"
+  roles:
+  - Captain
+  - CentralCommandOfficial
+  - ChiefEngineer
+  - ChiefMedicalOfficer
+  - ERTEngineer
+  - ERTJanitor
+  - ERTLeader
+  - ERTMedical
+  - ERTSecurity
+  - HeadOfPersonnel
+  - HeadOfSecurity
+  - Mystagogue
+
+- type: department
+  id: Engineering
+  description: department-Engineering-description
+  color: "#EFB341"
+  roles:
+  - AtmosphericTechnician
+  - ChiefEngineer
+  - StationEngineer
+  - SalvageTechnician
+
+- type: department
+  id: Medical
+  description: department-Medical-description
+  color: "#52B4E9"
+  roles:
+  - ChiefMedicalOfficer
+  - MedicalDoctor
+  - Psychologist
+  - MedicalCyborg
+  - Paramedic
+
+- type: department
+  id: Security
+  description: department-Security-description
+  color: "#DE3A3A"
+  roles:
+  - HeadOfSecurity
+  - PrisonGuard
+  - SecurityCadet
+  - SecurityOfficer
+  - Warden
+
+- type: department
+  id: Epistemics
+  description: department-Epistemics-description
+  color: "#D381C9"
+  roles:
+  - Mystagogue
+  - ForensicMantis
+  - Epistemologist
+  - Chaplain
+  - Cataloguer
+
+- type: department
+  id: Silicon
+  description: department-Silicon-description
+  color: "#8D9AAC"
+  roles:
+  - Cyborg
+  - MedicalCyborg

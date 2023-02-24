@@ -1,0 +1,33 @@
+- type: job
+  id: Chef
+  name: job-name-chef
+  description: job-description-chef
+  playTimeTracker: JobChef
+  startingGear: ChefGear
+  icon: "Chef"
+  supervisors: job-supervisors-hop
+  access:
+  - Service
+  - Kitchen
+  extendedAccess:
+  - Hydroponics
+  - Bar
+  - Maintenance
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: ProfessionalChef
+
+- type: startingGear
+  id: ChefGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitChef
+    head: ClothingHeadHatChef
+    back: ClothingBackpackFilled
+    shoes: ClothingShoesColorBlack
+    id: ChefPDA
+    ears: ClothingHeadsetService
+    outerClothing: ClothingOuterApronChef
+  innerclothingskirt: ClothingUniformJumpskirtChef
+  satchel: ClothingBackpackSatchelFilled
+  duffelbag: ClothingBackpackDuffelFilled
